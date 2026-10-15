@@ -298,7 +298,7 @@
         }
 
         function saveAdminGeneralSettings() {
-            appState.siteConfig.title = document.getElementById('adm-site-title').value;
+            appState.siteConfig.title = document.getElementById('adm-site-title-value') || document.getElementById('adm-site-title').value;
             appState.siteConfig.price = document.getElementById('adm-plan-price').value;
             saveState();
             closeModal('admin-modal');
