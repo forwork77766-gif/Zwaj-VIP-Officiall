@@ -5,108 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>زواج VIP - المنصة الأرقى للتعارف والزواج الرسمي</title>
     
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts - Cairo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Custom Tailwind Config -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        gold: {
-                            50: '#fffdf0',
-                            100: '#fefab8',
-                            200: '#fdf380',
-                            300: '#fce848',
-                            400: '#fada1b',
-                            500: '#d9b308',
-                            600: '#b38b03',
-                            700: '#8c6502',
-                            800: '#735008',
-                            900: '#61420d',
-                        },
-                        crimson: {
-                            800: '#5c061c',
-                            900: '#3d0210',
-                            950: '#260109'
-                        }
+                        gold: { 50: '#fffdf0', 100: '#fefab8', 200: '#fdf380', 300: '#fce848', 400: '#fada1b', 500: '#d9b308', 600: '#b38b03', 700: '#8c6502', 800: '#735008', 900: '#61420d' },
+                        crimson: { 800: '#5c061c', 900: '#3d0210', 950: '#260109' }
                     },
-                    fontFamily: {
-                        cairo: ['Cairo', 'sans-serif'],
-                    }
+                    fontFamily: { cairo: ['Cairo', 'sans-serif'] }
                 }
             }
         }
     </script>
-
     <style>
-        body {
-            font-family: 'Cairo', sans-serif;
-            background-color: #0b0205;
-            color: #f3f4f6;
-            overflow-x: hidden;
-        }
-        
-        .gold-gradient-text {
-            background: linear-gradient(135deg, #FFE259 0%, #FFA751 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        .gold-btn {
-            background: linear-gradient(135deg, #d9b308 0%, #b38b03 100%);
-            color: #000;
-            font-weight: 800;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(217, 179, 8, 0.3);
-        }
-        
-        .gold-btn:hover {
-            background: linear-gradient(135deg, #fada1b 0%, #d9b308 100%);
-            box-shadow: 0 6px 20px rgba(217, 179, 8, 0.5);
-            transform: translateY(-2px);
-        }
-
-        .glass-card {
-            background: rgba(38, 1, 9, 0.75);
-            backdrop-filter: blur(14px);
-            border: 1px solid rgba(217, 179, 8, 0.25);
-        }
-
-        .glass-card-hover {
-            transition: all 0.3s ease;
-        }
-        
-        .glass-card-hover:hover {
-            border-color: rgba(217, 179, 8, 0.6);
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(217, 179, 8, 0.15);
-        }
-
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 6px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: #1a030a;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #d9b308;
-            border-radius: 4px;
-        }
+        body { font-family: 'Cairo', sans-serif; background-color: #0b0205; color: #f3f4f6; overflow-x: hidden; }
+        .gold-gradient-text { background: linear-gradient(135deg, #FFE259 0%, #FFA751 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gold-btn { background: linear-gradient(135deg, #d9b308 0%, #b38b03 100%); color: #000; font-weight: 800; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(217, 179, 8, 0.3); }
+        .gold-btn:hover { background: linear-gradient(135deg, #fada1b 0%, #d9b308 100%); box-shadow: 0 6px 20px rgba(217, 179, 8, 0.5); transform: translateY(-2px); }
+        .glass-card { background: rgba(38, 1, 9, 0.75); backdrop-filter: blur(14px); border: 1px solid rgba(217, 179, 8, 0.25); }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #1a030a; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #d9b308; border-radius: 4px; }
     </style>
 </head>
 <body class="custom-scrollbar min-h-screen flex flex-col justify-between selection:bg-gold-500 selection:text-black">
 
-    <!-- Top Announcement Bar -->
     <div class="bg-gradient-to-r from-crimson-900 via-gold-700 to-crimson-900 text-gold-100 text-xs sm:text-sm py-2 px-4 text-center font-bold border-b border-gold-500/30">
         <div class="container mx-auto flex justify-between items-center">
             <span class="hidden sm:inline"><i class="fa-solid fa-shield-halved text-gold-400 ml-1"></i> المنصة الأولى الموثوقة للزواج الشرعي الـ VIP</span>
@@ -114,12 +44,9 @@
         </div>
     </div>
 
-    <!-- Main Navigation Bar -->
     <nav class="sticky top-0 z-40 bg-crimson-950/90 backdrop-blur-md border-b border-gold-500/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                
-                <!-- Logo -->
                 <div class="flex items-center space-x-3 space-x-reverse cursor-pointer">
                     <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gold-400 to-gold-700 p-0.5 shadow-lg shadow-gold-500/20">
                         <div class="w-full h-full bg-crimson-950 rounded-full flex items-center justify-center">
@@ -131,1225 +58,147 @@
                         <span class="block text-[10px] text-gray-400 tracking-wider">EXCLUSIVE MATRIMONY</span>
                     </div>
                 </div>
-
-                <!-- Navigation Links -->
                 <div class="hidden md:flex items-center space-x-8 space-x-reverse text-sm font-bold">
                     <a href="#hero" class="hover:text-gold-400 transition">الرئيسية</a>
                     <a href="#profiles" class="hover:text-gold-400 transition">معرض العضوات</a>
                     <a href="#features" class="hover:text-gold-400 transition">مميزات المنصة</a>
                     <a href="#pricing" class="hover:text-gold-400 transition">باقة الاشتراك</a>
                 </div>
-
-                <!-- Auth State Action Buttons -->
-                <div id="auth-buttons-container" class="flex items-center space-x-3 space-x-reverse">
-                    <!-- Dynamic rendering via JS -->
-                </div>
-
+                <div id="auth-buttons-container" class="flex items-center space-x-3 space-x-reverse"></div>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
     <section id="hero" class="relative py-16 md:py-24 overflow-hidden border-b border-gold-500/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
                 <div class="lg:col-span-7 text-center lg:text-right space-y-6">
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-crimson-900/80 border border-gold-500/30 text-gold-300 text-xs sm:text-sm font-bold">
-                        <i class="fa-solid fa-gem text-gold-400"></i>
-                        <span id="hero-badge-text">الوسط الأرقى للتعارف والزواج الشرعي المباشر</span>
-                    </div>
-
                     <h1 id="hero-heading" class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
                         شريك حياتك المناسب يبدأ بـ <span class="gold-gradient-text">خطوة جادة وآمنة</span>
                     </h1>
-
                     <p id="hero-subtext" class="text-gray-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
                         منصة زواج VIP توفر لك بيئة راقية، سرية تامّة، وتواصل مباشر مع شخصيات جادة تبحث عن الاستقرار والزواج الشرعي.
                     </p>
-
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
                         <button onclick="handleMainCTA()" class="gold-btn w-full sm:w-auto px-8 py-4 rounded-xl text-lg flex items-center justify-center gap-2">
                             <i class="fa-solid fa-crown text-black"></i>
-                            <span id="hero-cta-btn">سجل الآن واشترك فوراً</span>
+                            <span>سجل الآن واشترك فوراً</span>
                         </button>
-                        <a href="#profiles" class="w-full sm:w-auto px-8 py-4 rounded-xl text-lg font-bold bg-white/5 hover:bg-white/10 text-white border border-white/10 flex items-center justify-center gap-2 transition">
-                            <i class="fa-solid fa-users text-gold-400"></i>
-                            <span>استعرض العضوات</span>
-                        </a>
                     </div>
                 </div>
-
-                <div class="lg:col-span-5 relative flex justify-center">
-                    <div class="relative w-full max-w-md">
-                        <div class="glass-card rounded-3xl p-6 border border-gold-500/30 text-center">
-                            <div class="relative h-80 rounded-2xl overflow-hidden mb-6 border border-gold-500/20">
-                                <img id="hero-featured-img" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800" alt="عضوية مميزة" class="w-full h-full object-cover">
-                                <div class="absolute inset-0 bg-gradient-to-t from-crimson-950 via-transparent to-transparent"></div>
-                                <div class="absolute bottom-4 right-4 left-4 text-right">
-                                    <span class="inline-block bg-gold-500 text-black font-extrabold text-xs px-2.5 py-1 rounded-md mb-1">عضوية VIP موثقة</span>
-                                    <h3 id="hero-card-title-text" class="text-xl font-bold text-white">طلبات زواج جادة وموثوقة</h3>
-                                </div>
-                            </div>
-                            <button onclick="handleMainCTA()" class="w-full py-3.5 bg-crimson-800 hover:bg-crimson-900 text-gold-300 border border-gold-500/40 rounded-xl font-bold text-sm transition flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-lock-open text-gold-400"></i>
-                                <span>تفعيل العضوية لرؤية وسائل التواصل</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- PROFILES GALLERY SECTION -->
     <section id="profiles" class="py-20 bg-crimson-950/40 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
-                    معرض <span class="gold-gradient-text">العضوات والطلبات المتاحة</span>
-                </h2>
-                <p class="text-gray-300 text-sm sm:text-base">
-                    نماذج من طلبات التعارف والزواج الجاد. يمكنك الحصول على وسائل التواصل المباشرة فور تفعيل العضوية.
-                </p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">معرض <span class="gold-gradient-text">العضوات والطلبات المتاحة</span></h2>
             </div>
-
-            <!-- Profile Cards Grid -->
-            <div id="profiles-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                <!-- Dynamically populated via JS -->
-            </div>
+            <div id="profiles-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
         </div>
     </section>
 
-    <!-- FEATURES SECTION -->
-    <section id="features" class="py-20 border-t border-b border-gold-500/10 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-                <span class="text-gold-400 font-bold text-sm uppercase">لماذا اختيار زواج VIP؟</span>
-                <h2 class="text-3xl font-extrabold text-white">مميزات ومعايير الخصوصية</h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="glass-card p-8 rounded-2xl text-center space-y-4">
-                    <div class="w-16 h-16 bg-gradient-to-br from-gold-400 to-gold-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
-                        <i class="fa-solid fa-user-shield text-2xl text-black"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white">سرية وحماية كاملة</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        نضمن لك حماية كاملة لبياناتك الشخصية. لا يتم إظهار وسائل التواصل إلا للأعضاء المشتركين والمفعلين رسمياً.
-                    </p>
-                </div>
-
-                <div class="glass-card p-8 rounded-2xl text-center space-y-4">
-                    <div class="w-16 h-16 bg-gradient-to-br from-gold-400 to-gold-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
-                        <i class="fa-solid fa-handshake-angle text-2xl text-black"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white">جدية ومصداقية 100%</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        يتم مراجعة كافة الطلبات وتحويلات تفعيل العضوية يدوياً للتأكد من جدية المتقدمين والحد من الحسابات الوهمية.
-                    </p>
-                </div>
-
-                <div class="glass-card p-8 rounded-2xl text-center space-y-4">
-                    <div class="w-16 h-16 bg-gradient-to-br from-gold-400 to-gold-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
-                        <i class="fa-solid fa-comments text-2xl text-black"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white">تواصل مباشر وسريع</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        بمجرد تفعيل العضوية، يمكنك الاطلاع على الأرقام ووسائل التواصل المباشرة بدون وسائط أو تعقيدات.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRICING SECTION -->
-    <section id="pricing" class="py-20 relative">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center space-y-4 mb-12">
-                <span class="inline-block bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs px-4 py-1.5 rounded-full font-bold">الباقة الموحدة والشاملة</span>
-                <h2 class="text-3xl sm:text-5xl font-black text-white">تفعيل العضوية والاشتراك</h2>
-                <p class="text-gray-300 text-sm sm:text-base">اشتراك واحد يتيح لك التواصل المباشر مع جميع الأعضاء طوال فترة العضوية.</p>
-            </div>
-
-            <div class="glass-card rounded-3xl p-8 sm:p-12 border-2 border-gold-500/50 shadow-2xl relative overflow-hidden">
-                <div class="text-center space-y-6">
-                    <h3 class="text-2xl font-bold text-white">باقة العضوية الذهبية VIP</h3>
-                    
-                    <div class="flex items-center justify-center gap-2">
-                        <span id="plan-price-display" class="text-5xl sm:text-6xl font-black gold-gradient-text">299</span>
-                        <div class="text-right">
-                            <span class="block text-xl font-bold text-gold-400">ج.م</span>
-                            <span class="block text-xs text-gray-400">تفعيل مدى الحياة</span>
-                        </div>
-                    </div>
-
-                    <ul class="space-y-4 text-right max-w-md mx-auto text-sm text-gray-200 font-medium">
-                        <li class="flex items-center gap-3">
-                            <i class="fa-solid fa-circle-check text-gold-400"></i>
-                            <span>إمكانية رؤية جميع بيانات الملفات الشخصية والأرقام.</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fa-solid fa-circle-check text-gold-400"></i>
-                            <span>إمكانية التواصل المباشر عبر الواتساب والمكالمات.</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fa-solid fa-circle-check text-gold-400"></i>
-                            <span>دعم متواصل ومساعدة في إيجاد الشريك المناسب.</span>
-                        </li>
-                    </ul>
-
-                    <div class="pt-6">
-                        <button onclick="handleSubscribeClick()" class="gold-btn w-full py-4 rounded-xl text-lg flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-bolt text-black"></i>
-                            <span>اشترك الآن وفعّل عضويتك</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
     <footer class="bg-crimson-950 border-t border-gold-500/20 py-8 text-gray-400 text-xs text-center relative">
         <p>جميع الحقوق محفوظة © <span id="footer-year"></span> منصة زواج VIP</p>
-        <!-- Secret Invisible Admin Trigger Button at the bottom right corner -->
         <button onclick="promptAdminLogin()" class="absolute bottom-2 right-2 w-4 h-4 opacity-0 hover:opacity-100 bg-gold-500/20 cursor-pointer rounded" title="إدارة"></button>
     </footer>
 
-    <!-- ==================== MODALS ==================== -->
-    <div id="auth-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm">
-        <div class="relative w-full max-w-md glass-card rounded-2xl border border-gold-500/40 p-6 space-y-6">
-            <button onclick="closeModal('auth-modal')" class="absolute top-4 left-4 text-gray-400 hover:text-white">
-                <i class="fa-solid fa-xmark text-xl"></i>
-            </button>
-
-            <div class="flex border-b border-gold-500/20 pb-2">
-                <button id="tab-signup-btn" onclick="switchAuthTab('signup')" class="w-1/2 text-center pb-2 font-bold text-gold-400 border-b-2 border-gold-400">
-                    إنشاء حساب جديد
-                </button>
-                <button id="tab-login-btn" onclick="switchAuthTab('login')" class="w-1/2 text-center pb-2 font-bold text-gray-400 hover:text-white">
-                    تسجيل الدخول
-                </button>
-            </div>
-
-            <form id="signup-form" onsubmit="handleSignup(event)" class="space-y-4">
-                <div>
-                    <label class="block text-xs text-gray-300 font-bold mb-1">الاسم بالكامل</label>
-                    <input type="text" id="signup-name" required placeholder="أدخل اسمك الكريم" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-400">
-                </div>
-                <div>
-                    <label class="block text-xs text-gray-300 font-bold mb-1">رقم الهاتف / الواتساب</label>
-                    <input type="tel" id="signup-phone" required placeholder="01xxxxxxxx" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-400" dir="ltr">
-                </div>
-                <div>
-                    <label class="block text-xs text-gray-300 font-bold mb-1">كلمة المرور</label>
-                    <input type="password" id="signup-pass" required placeholder="******" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-400">
-                </div>
-                <button type="submit" class="gold-btn w-full py-3 rounded-xl font-bold text-sm">
-                    تسجيل الحساب والمتابعة
-                </button>
-            </form>
-
-            <form id="login-form" onsubmit="handleLogin(event)" class="space-y-4 hidden">
-                <div>
-                    <label class="block text-xs text-gray-300 font-bold mb-1">رقم الهاتف</label>
-                    <input type="tel" id="login-phone" required placeholder="01xxxxxxxx" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-400" dir="ltr">
-                </div>
-                <div>
-                    <label class="block text-xs text-gray-300 font-bold mb-1">كلمة المرور</label>
-                    <input type="password" id="login-pass" required placeholder="******" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-400">
-                </div>
-                <button type="submit" class="gold-btn w-full py-3 rounded-xl font-bold text-sm">
-                    دخول للحساب
-                </button>
-            </form>
+    <!-- ADMIN MODAL -->
+    <div id="admin-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-3 bg-black/90 backdrop-blur-md">
+        <div class="relative w-full max-w-xl glass-card rounded-2xl border border-gold-500/50 p-6 space-y-4 text-right">
+            <button onclick="closeModal('admin-modal')" class="absolute top-4 left-4 text-gray-400 hover:text-white"><i class="fa-solid fa-xmark text-2xl"></i></button>
+            <h3 class="text-xl font-bold text-white">لوحة التحكم</h3>
+            <div><label class="block text-xs text-gray-300 mb-1">اسم الموقع</label><input type="text" id="adm-site-title" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white"></div>
+            <div><label class="block text-xs text-gray-300 mb-1">سعر الباقة</label><input type="number" id="adm-plan-price" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white"></div>
+            <button onclick="saveAdminGeneralSettings()" class="gold-btn px-6 py-2 rounded-xl text-xs font-bold">حفظ سحابياً في جدول البيانات</button>
         </div>
     </div>
 
-    <!-- CHECKOUT MODAL -->
-    <div id="checkout-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-3 sm:p-4 bg-black/90 backdrop-blur-md">
-        <div class="relative w-full max-w-2xl bg-gradient-to-b from-blue-950 via-slate-900 to-indigo-950 rounded-2xl border border-blue-500/40 p-4 sm:p-6 space-y-5 max-h-[94vh] overflow-y-auto custom-scrollbar text-right">
-            
-            <button onclick="closeModal('checkout-modal')" class="absolute top-4 left-4 text-gray-400 hover:text-white">
-                <i class="fa-solid fa-xmark text-2xl"></i>
-            </button>
-
-            <div class="text-center space-y-1">
-                <h3 class="text-xl sm:text-2xl font-black text-white">اختر طريقة الدفع المناسبة لتفعيل العضوية</h3>
-                <p class="text-xs text-blue-200">قم بتحويل المبلغ المطلوب ثم ارفع صورة الإيصال ليتم التفعيل فوراً</p>
-            </div>
-
-            <div class="grid grid-cols-3 gap-2 bg-black/40 p-1.5 rounded-xl border border-white/10">
-                <button onclick="switchPaymentMethod('instapay')" id="pay-tab-instapay" class="py-2.5 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow">
-                    <i class="fa-solid fa-building-columns"></i> إنستا باي (InstaPay)
-                </button>
-                <button onclick="switchPaymentMethod('orange')" id="pay-tab-orange" class="py-2.5 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5 text-gray-300 hover:text-white">
-                    <i class="fa-solid fa-mobile-screen"></i> أورانج كاش
-                </button>
-                <button onclick="switchPaymentMethod('etisalat')" id="pay-tab-etisalat" class="py-2.5 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5 text-gray-300 hover:text-white">
-                    <i class="fa-solid fa-mobile-screen"></i> اتصالات كاش
-                </button>
-            </div>
-
-            <div id="pay-sec-instapay" class="space-y-3">
-                <div class="bg-purple-950/40 border border-purple-500/30 p-3 rounded-xl text-center">
-                    <span class="text-xs text-purple-200 block">طريقة التحويل عبر إنستا باي (InstaPay):</span>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <div class="bg-white/5 border border-white/10 p-3 rounded-xl flex items-center justify-between">
-                        <div>
-                            <span class="text-[10px] text-gray-400 block">اسم البنك</span>
-                            <span id="instapay-bank-display" class="text-sm font-extrabold text-white">البنك الأهلي المصري</span>
-                        </div>
-                        <button onclick="copyToClipboard('instapay-bank-display')" class="bg-blue-600/30 hover:bg-blue-600 text-blue-200 hover:text-white text-xs px-3 py-1.5 rounded-lg border border-blue-400/30 transition flex items-center gap-1">
-                            <i class="fa-regular fa-copy"></i> نسخ
-                        </button>
-                    </div>
-
-                    <div class="bg-white/5 border border-white/10 p-3 rounded-xl flex items-center justify-between">
-                        <div>
-                            <span class="text-[10px] text-gray-400 block">اسم المستفيد</span>
-                            <span id="instapay-name-display" class="text-sm font-extrabold text-white">ادارة منصة زواج VIP</span>
-                        </div>
-                        <button onclick="copyToClipboard('instapay-name-display')" class="bg-blue-600/30 hover:bg-blue-600 text-blue-200 hover:text-white text-xs px-3 py-1.5 rounded-lg border border-blue-400/30 transition flex items-center gap-1">
-                            <i class="fa-regular fa-copy"></i> نسخ
-                        </button>
-                    </div>
-
-                    <div class="bg-white/5 border border-white/10 p-3 rounded-xl flex items-center justify-between sm:col-span-2">
-                        <div>
-                            <span class="text-[10px] text-gray-400 block">رقم الحساب / IBAN</span>
-                            <span id="instapay-iban-display" class="text-sm font-extrabold text-gold-300 tracking-wider" dir="ltr">EG890002000100000234567890123</span>
-                        </div>
-                        <button onclick="copyToClipboard('instapay-iban-display')" class="bg-blue-600/30 hover:bg-blue-600 text-blue-200 hover:text-white text-xs px-3 py-1.5 rounded-lg border border-blue-400/30 transition flex items-center gap-1">
-                            <i class="fa-regular fa-copy"></i> نسخ
-                        </button>
-                    </div>
-
-                    <div class="bg-white/5 border border-white/10 p-3 rounded-xl flex items-center justify-between">
-                        <div>
-                            <span class="text-[10px] text-gray-400 block">عنوان الدفع IPN</span>
-                            <span id="instapay-ipn-display" class="text-sm font-extrabold text-gold-300" dir="ltr">zawajvip@instapay</span>
-                        </div>
-                        <button onclick="copyToClipboard('instapay-ipn-display')" class="bg-blue-600/30 hover:bg-blue-600 text-blue-200 hover:text-white text-xs px-3 py-1.5 rounded-lg border border-blue-400/30 transition flex items-center gap-1">
-                            <i class="fa-regular fa-copy"></i> نسخ
-                        </button>
-                    </div>
-
-                    <div class="bg-white/5 border border-white/10 p-3 rounded-xl flex items-center justify-between">
-                        <div>
-                            <span class="text-[10px] text-gray-400 block">المبلغ المطلوب تحويله</span>
-                            <span id="instapay-amount-display" class="text-sm font-extrabold text-emerald-400">299 جنيه</span>
-                        </div>
-                        <button onclick="copyToClipboard('instapay-amount-num-only')" class="bg-blue-600/30 hover:bg-blue-600 text-blue-200 hover:text-white text-xs px-3 py-1.5 rounded-lg border border-blue-400/30 transition flex items-center gap-1">
-                            <i class="fa-regular fa-copy"></i> نسخ
-                        </button>
-                        <span id="instapay-amount-num-only" class="hidden">299</span>
-                    </div>
-                </div>
-            </div>
-
-            <div id="pay-sec-wallets" class="space-y-3 hidden">
-                <div class="bg-blue-600 text-white font-extrabold text-xs px-4 py-2 rounded-lg flex items-center justify-between">
-                    <span id="wallet-title-header">Orange Cash</span>
-                    <i class="fa-solid fa-wallet"></i>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <div class="bg-white text-slate-900 p-3 rounded-xl flex items-center justify-between shadow">
-                        <div>
-                            <span class="text-[11px] font-bold text-gray-500 block">رقم المحفظة</span>
-                            <span id="wallet-number-display" class="text-base font-black tracking-wider text-slate-900" dir="ltr">01200000000</span>
-                        </div>
-                        <button onclick="copyToClipboard('wallet-number-display')" class="bg-blue-50 text-blue-600 hover:bg-blue-100 font-bold text-xs px-3 py-1.5 rounded-lg border border-blue-200 transition">
-                            نسخ
-                        </button>
-                    </div>
-
-                    <div class="bg-white text-slate-900 p-3 rounded-xl flex items-center justify-between shadow">
-                        <div>
-                            <span class="text-[11px] font-bold text-gray-500 block">المبلغ المطلوب تحويله</span>
-                            <span id="wallet-amount-display" class="text-base font-black text-slate-900">299 جنيه</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white text-slate-800 p-3 rounded-xl border border-blue-100 text-xs sm:text-sm font-semibold flex items-center gap-2 shadow-sm">
-                    <i class="fa-solid fa-mobile-retro text-red-500 text-base"></i>
-                    <p class="leading-relaxed">
-                        <span id="wallet-note-text">هذا الرقم مخصص لاستقبال التحويلات فقط. لأي استفسار، يرجى مراسلتنا عبر</span>
-                        <a href="https://facebook.com" id="wallet-fb-link" target="_blank" class="text-blue-600 font-bold underline px-1">صفحتنا على فيسبوك</a>.
-                    </p>
-                </div>
-
-                <div class="bg-white text-slate-900 p-3 rounded-xl border border-yellow-300 text-xs sm:text-sm font-bold flex items-center gap-2 shadow-sm">
-                    <i class="fa-solid fa-triangle-exclamation text-amber-500 text-lg"></i>
-                    <span>مهم: ادفع <span id="wallet-strict-amount">299</span> جنيه فقط لسرعة استجابة النظام.</span>
-                </div>
-            </div>
-
-            <form onsubmit="handleProofSubmit(event)" class="bg-white text-slate-900 p-4 sm:p-5 rounded-2xl space-y-4 shadow-xl">
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 mb-1">صورة التحويل <span class="text-red-500">*</span></label>
-                    <div onclick="document.getElementById('proof-file-input').click()" class="border-2 border-dashed border-emerald-400 bg-emerald-50/50 hover:bg-emerald-50 rounded-xl p-4 text-center cursor-pointer transition">
-                        <div class="flex items-center justify-center gap-2 text-emerald-800 font-bold text-sm">
-                            <i class="fa-solid fa-camera text-lg"></i>
-                            <span>رفع صورة التحويل</span>
-                        </div>
-                        <span id="proof-file-name" class="block text-xs text-gray-500 mt-1">لم يتم اختيار صورة</span>
-                    </div>
-                    <input type="file" id="proof-file-input" accept="image/*" required onchange="handleProofFileSelect(event)" class="hidden">
-                    <div id="proof-preview-container" class="mt-2 hidden text-center">
-                        <img id="proof-preview-img" src="" class="max-h-36 rounded-lg border border-emerald-500 mx-auto shadow-md">
-                    </div>
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 mb-1">رقم الموبايل المحوّل / الاسم الثنائي <span class="text-red-500">*</span></label>
-                    <input type="text" id="proof-fullname" required placeholder="أدخل رقم الموبايل أو الاسم المكتوب في التحويل" class="w-full bg-gray-50 border border-gray-300 rounded-xl px-4 py-2.5 text-sm text-slate-900 focus:outline-none focus:border-blue-500">
-                </div>
-
-                <button type="submit" class="w-full bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white py-3.5 rounded-xl font-extrabold text-sm shadow-lg transition flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    <span>إرسال وتأكيد التحويل</span>
-                </button>
-            </form>
-
-        </div>
-    </div>
-
-    <!-- ADMIN PANEL MODAL -->
-    <div id="admin-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-3 sm:p-4 bg-black/90 backdrop-blur-md">
-        <div class="relative w-full max-w-4xl glass-card rounded-2xl border border-gold-500/50 p-6 space-y-5 max-h-[92vh] overflow-y-auto custom-scrollbar text-right">
-            
-            <button onclick="closeModal('admin-modal')" class="absolute top-4 left-4 text-gray-400 hover:text-white">
-                <i class="fa-solid fa-xmark text-2xl"></i>
-            </button>
-
-            <div class="flex items-center gap-3 border-b border-gold-500/20 pb-3">
-                <div class="w-10 h-10 bg-gold-500 text-black rounded-xl flex items-center justify-center font-bold">
-                    <i class="fa-solid fa-sliders text-xl"></i>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white">لوحة التحكم الإدارية الشاملة</h3>
-                    <p class="text-xs text-gray-400">التحكم الكامل في النصوص، الألقاب، الصورة البارزة، وبوابات الدفع</p>
-                </div>
-            </div>
-
-            <!-- Admin Tabs -->
-            <div class="flex flex-wrap gap-2 border-b border-gold-500/20 pb-3">
-                <button onclick="switchAdminTab('general')" id="adm-tab-general" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-gold-500 text-black">
-                    <i class="fa-solid fa-pen-to-square ml-1"></i> النصوص والعناوين والصور
-                </button>
-                <button onclick="switchAdminTab('wallets')" id="adm-tab-wallets" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-black/40 text-gray-300 hover:text-white">
-                    <i class="fa-solid fa-wallet ml-1"></i> بيانات الدفع والمحافظ
-                </button>
-                <button onclick="switchAdminTab('profiles')" id="adm-tab-profiles" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-black/40 text-gray-300 hover:text-white">
-                    <i class="fa-solid fa-users ml-1"></i> إدارة معرض العضوات
-                </button>
-                <button onclick="switchAdminTab('requests')" id="adm-tab-requests" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-black/40 text-gray-300 hover:text-white relative">
-                    <i class="fa-solid fa-receipt ml-1"></i> طلبات التفعيل
-                    <span id="admin-pending-badge" class="hidden absolute -top-1 -right-1 bg-red-600 text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center">0</span>
-                </button>
-                <button onclick="switchAdminTab('security')" id="adm-tab-security" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-black/40 text-gray-300 hover:text-white">
-                    <i class="fa-solid fa-key ml-1"></i> كلمة المرور
-                </button>
-            </div>
-
-            <!-- ADMIN SECTION 1 -->
-            <div id="admin-sec-general" class="space-y-4">
-                <h4 class="text-xs font-bold text-gold-400">تعديل نصوص الشريط، العناوين، الصورة البارزة في البداية:</h4>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <div>
-                        <label class="block text-xs text-gray-300 mb-1">اسم الموقع / البراند</label>
-                        <input type="text" id="adm-site-title" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white">
-                    </div>
-                    <div>
-                        <label class="block text-xs text-gray-300 mb-1">سعر باقة العضوية (بالجنيه)</label>
-                        <input type="number" id="adm-plan-price" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white">
-                    </div>
-
-                    <div class="md:col-span-2">
-                        <label class="block text-xs text-gold-400 font-bold mb-1">نص الشريط العلوي في قسم البداية (Badge)</label>
-                        <input type="text" id="adm-badge-text" placeholder="الوسط الأرقى للتعارف والزواج الشرعي المباشر" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white">
-                    </div>
-
-                    <div class="md:col-span-2">
-                        <label class="block text-xs text-gray-300 mb-1">العنوان الرئيسي (Hero Heading)</label>
-                        <input type="text" id="adm-hero-head" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white">
-                    </div>
-                    
-                    <div class="md:col-span-2">
-                        <label class="block text-xs text-gray-300 mb-1">الوصف الفرعي (Subtext)</label>
-                        <textarea id="adm-hero-sub" rows="2" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white"></textarea>
-                    </div>
-
-                    <div class="md:col-span-2">
-                        <label class="block text-xs text-gold-400 font-bold mb-1">عنوان الكارت البارز في البداية (طلبات زواج جادة وموثوقة)</label>
-                        <input type="text" id="adm-card-title" placeholder="طلبات زواج جادة وموثوقة" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white">
-                    </div>
-
-                    <div class="md:col-span-2 bg-black/40 border border-gold-500/30 p-3 rounded-xl space-y-2">
-                        <label class="block text-xs text-gold-400 font-bold">
-                            <i class="fa-solid fa-image ml-1"></i> رفع وتغيير الصورة البارزة في بداية الموقع (كارت العرض الأول) من جهازك
-                        </label>
-                        <input type="file" id="hero-img-input" accept="image/*" onchange="handleHeroImgUpload(event)" class="w-full text-xs text-gray-300 file:mr-3 file:py-1.5 file:px-3 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-gold-500 file:text-black hover:file:bg-gold-400 cursor-pointer">
-                        <div id="hero-img-preview-box" class="hidden mt-2 flex items-center gap-3">
-                            <span class="text-[10px] text-gray-400">معاينة الصورة الجديدة:</span>
-                            <img id="hero-img-preview" src="" class="w-16 h-16 rounded-xl object-cover border border-gold-500">
-                        </div>
-                    </div>
-                </div>
-                <button onclick="saveAdminGeneralSettings()" class="gold-btn px-6 py-2 rounded-xl text-xs font-bold">
-                    حفظ التغييرات
-                </button>
-            </div>
-
-            <!-- ADMIN SECTION 2 -->
-            <div id="admin-sec-wallets" class="space-y-4 hidden">
-                <h4 class="text-xs font-bold text-gold-400">تعديل أرقام المحافظ وحساب إنستا باي (InstaPay):</h4>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <div class="md:col-span-2 bg-purple-950/30 p-3 rounded-xl border border-purple-500/30 space-y-2">
-                        <span class="text-xs font-bold text-purple-300 block">تفاصيل إنستا باي (InstaPay):</span>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                            <input type="text" id="adm-ip-bank" placeholder="اسم البنك" class="bg-black/50 border border-gold-500/30 rounded-lg p-2 text-xs text-white">
-                            <input type="text" id="adm-ip-name" placeholder="اسم المستفيد" class="bg-black/50 border border-gold-500/30 rounded-lg p-2 text-xs text-white">
-                            <input type="text" id="adm-ip-iban" placeholder="رقم الحساب / IBAN" class="bg-black/50 border border-gold-500/30 rounded-lg p-2 text-xs text-white" dir="ltr">
-                            <input type="text" id="adm-ip-ipn" placeholder="عنوان الدفع IPN" class="bg-black/50 border border-gold-500/30 rounded-lg p-2 text-xs text-white" dir="ltr">
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs text-gray-300 mb-1">رقم أورانج كاش (Orange Cash)</label>
-                        <input type="text" id="adm-orange-num" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white" dir="ltr">
-                    </div>
-                    <div>
-                        <label class="block text-xs text-gray-300 mb-1">رقم اتصالات كاش (Etisalat Cash)</label>
-                        <input type="text" id="adm-etisalat-num" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white" dir="ltr">
-                    </div>
-                    <div class="md:col-span-2">
-                        <label class="block text-xs text-gray-300 mb-1">رابط صفحة الفيسبوك الموضحة في التنبيه</label>
-                        <input type="text" id="adm-fb-link" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white" dir="ltr">
-                    </div>
-                </div>
-
-                <button onclick="saveAdminWalletSettings()" class="gold-btn px-6 py-2 rounded-xl text-xs font-bold">
-                    حفظ بيانات الدفع
-                </button>
-            </div>
-
-            <!-- ADMIN SECTION 3 -->
-            <div id="admin-sec-profiles" class="space-y-4 hidden">
-                <div class="flex justify-between items-center">
-                    <h4 class="text-xs font-bold text-gold-400">إدارة صور وكروت العضوات / النساء:</h4>
-                    <button onclick="openAddProfileModal()" class="bg-gold-500 text-black font-bold px-3 py-1.5 rounded-xl text-xs hover:bg-gold-400 flex items-center gap-1">
-                        <i class="fa-solid fa-plus"></i> إضافة عضوة بملف صورة مباشر
-                    </button>
-                </div>
-
-                <div id="adm-profiles-list" class="space-y-2 max-h-72 overflow-y-auto custom-scrollbar">
-                    <!-- Profiles list rendered here -->
-                </div>
-            </div>
-
-            <!-- ADMIN SECTION 4 -->
-            <div id="admin-sec-requests" class="space-y-4 hidden">
-                <h4 class="text-xs font-bold text-gold-400">مراجعة إيصالات التحويل وتفعيل الحسابات:</h4>
-                <div id="adm-requests-list" class="space-y-3 max-h-72 overflow-y-auto custom-scrollbar">
-                    <!-- Requests rendered here -->
-                </div>
-            </div>
-
-            <!-- ADMIN SECTION 5 -->
-            <div id="admin-sec-security" class="space-y-4 hidden max-w-sm">
-                <h4 class="text-xs font-bold text-gold-400">تغيير كلمة مرور لوحة التحكم:</h4>
-                <div>
-                    <label class="block text-xs text-gray-300 mb-1">كلمة المرور الجديدة</label>
-                    <input type="password" id="adm-new-pass" placeholder="أدخل كلمة مرور جديدة" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white">
-                </div>
-                <button onclick="changeAdminPassword()" class="gold-btn px-6 py-2 rounded-xl text-xs font-bold">
-                    تغيير كلمة المرور
-                </button>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- 4. ADD/EDIT PROFILE MODAL -->
-    <div id="add-profile-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm">
-        <div class="relative w-full max-w-md glass-card rounded-2xl border border-gold-500/40 p-6 space-y-4 text-right">
-            <button onclick="closeModal('add-profile-modal')" class="absolute top-4 left-4 text-gray-400 hover:text-white">
-                <i class="fa-solid fa-xmark text-xl"></i>
-            </button>
-
-            <h3 id="add-profile-title" class="text-base font-bold text-white">إضافة عضوة جديدة بملف صورة من الجهاز</h3>
-
-            <form onsubmit="handleSaveProfile(event)" class="space-y-3">
-                <input type="hidden" id="prof-edit-id">
-                
-                <div>
-                    <label class="block text-xs text-gray-300 mb-1">الاسم / الرمز</label>
-                    <input type="text" id="prof-name" required placeholder="مثال: مريم م." class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white">
-                </div>
-
-                <div class="grid grid-cols-2 gap-2">
-                    <div>
-                        <label class="block text-xs text-gray-300 mb-1">العمر</label>
-                        <input type="number" id="prof-age" required placeholder="26" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white">
-                    </div>
-                    <div>
-                        <label class="block text-xs text-gray-300 mb-1">المدينة / المحافظة</label>
-                        <input type="text" id="prof-city" required placeholder="القاهرة" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white">
-                    </div>
-                </div>
-
-                <div>
-                    <label class="block text-xs text-gray-300 mb-1">المؤهل / المهنة</label>
-                    <input type="text" id="prof-job" required placeholder="طبيبة أسنان" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white">
-                </div>
-
-                <div>
-                    <label class="block text-xs text-gold-400 font-bold mb-1">
-                        <i class="fa-solid fa-upload ml-1"></i> اختر صورة المرأة مباشرة من جهازك:
-                    </label>
-                    <input type="file" id="prof-file-input" accept="image/*" onchange="previewProfileFileImage(event)" class="w-full text-xs text-gray-300 file:mr-3 file:py-1.5 file:px-3 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-gold-500 file:text-black hover:file:bg-gold-400 cursor-pointer">
-                    
-                    <div id="prof-preview-container" class="mt-2 text-center hidden">
-                        <span class="text-[10px] text-gray-400 block mb-1">معاينة الصورة المختارة:</span>
-                        <img id="prof-preview-img" src="" class="w-20 h-20 rounded-full object-cover border-2 border-gold-500 mx-auto shadow-md">
-                    </div>
-                </div>
-
-                <div>
-                    <label class="block text-xs text-gray-300 mb-1">رقم التواصل / الواتساب (يظهر بعد التفعيل)</label>
-                    <input type="text" id="prof-phone" required placeholder="01012345678" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white" dir="ltr">
-                </div>
-
-                <button type="submit" class="gold-btn w-full py-2.5 rounded-xl font-bold text-xs mt-2">
-                    حفظ الملف في المعرض
-                </button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Notification Toast -->
     <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 max-w-xs bg-crimson-900 text-white border border-gold-500/50 p-3.5 rounded-xl shadow-2xl flex items-center gap-3">
-        <i id="toast-icon" class="fa-solid fa-circle-check text-gold-400 text-lg"></i>
         <span id="toast-message" class="text-xs font-bold">تمت العملية بنجاح</span>
     </div>
 
-    <!-- ==================== JAVASCRIPT SYSTEM LOGIC ==================== -->
     <script>
-        const defaultState = {
+        const API_URL = "https://script.google.com/macros/s/AKfycbyqQFpPq_ady0uw4C2KcwUvuthGLFv33mr-WlkC0F60oF3org4lOD5PO2DUZeo9TQVdCg/exec";
+
+        let appState = {
             adminPassword: "admin123",
-            siteConfig: {
-                title: "زواج VIP",
-                price: 299,
-                badgeText: "الوسط الأرقى للتعارف والزواج الشرعي المباشر",
-                heroHeading: "شريك حياتك المناسب يبدأ بـ خطوة جادة وآمنة",
-                heroSubtext: "منصة زواج VIP توفر لك بيئة راقية، سرية تامّة، وتواصل مباشر مع شخصيات جادة تبحث عن الاستقرار والزواج الشرعي.",
-                heroFeaturedImg: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800",
-                heroCardTitle: "طلبات زواج جادة وموثوقة"
-            },
-            wallets: {
-                instapayBank: "البنك الأهلي المصري",
-                instapayName: "ادارة منصة زواج VIP",
-                instapayIban: "EG890002000100000234567890123",
-                instapayIpn: "zawajvip@instapay",
-                orange: "012021993098",
-                etisalat: "011021993098",
-                fbLink: "https://facebook.com"
-            },
-            profiles: [
-                {
-                    id: 1,
-                    name: "مريم م.",
-                    age: 26,
-                    city: "القاهرة",
-                    job: "طبيبة أسنان",
-                    img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600",
-                    phone: "01011122334"
-                },
-                {
-                    id: 2,
-                    name: "سارة ك.",
-                    age: 28,
-                    city: "الإسكندرية",
-                    job: "مهندسة برمجيات",
-                    img: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=600",
-                    phone: "01233445566"
-                },
-                {
-                    id: 3,
-                    name: "نورهان أ.",
-                    age: 24,
-                    city: "الجيزة",
-                    job: "مُعلمة لغات",
-                    img: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=600",
-                    phone: "01155667788"
-                }
-            ],
-            paymentRequests: [],
+            siteConfig: { title: "زواج VIP", price: 299, heroSubtext: "منصة زواج VIP..." },
+            profiles: [{ id: 1, name: "مريم م.", age: 26, city: "القاهرة", job: "طبيبة أسنان", img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600", phone: "01011122334" }],
             currentUser: null
         };
 
-        let appState = JSON.parse(localStorage.getItem('zawaj_vip_state_v7')) || defaultState;
-        let selectedPaymentMethod = 'instapay';
-        let currentUploadedProofBase64 = '';
-        let currentProfileBase64 = '';
-        let newHeroImgBase64 = '';
+        async function loadDataFromCloud() {
+            try {
+                let response = await fetch(API_URL);
+                let data = await response.json();
+                if (data && data.siteConfig) {
+                    appState = data;
+                }
+                renderUI();
+            } catch (error) {
+                renderUI();
+            }
+        }
 
-        function saveState() {
-            localStorage.setItem('zawaj_vip_state_v7', JSON.stringify(appState));
-            renderUI();
+        async function saveState() {
+            try {
+                await fetch(API_URL, {
+                    method: 'POST',
+                    body: JSON.stringify(appState)
+                });
+                showToast("تم الحفظ في قاعدة البيانات بنجاح للجميع");
+                renderUI();
+            } catch (error) {
+                showToast("خطأ أثناء الحفظ السحابي");
+            }
         }
 
         window.addEventListener('DOMContentLoaded', () => {
             document.getElementById('footer-year').textContent = new Date().getFullYear();
-            renderUI();
+            loadDataFromCloud();
         });
 
         function renderUI() {
             document.getElementById('nav-brand-title').textContent = appState.siteConfig.title;
-            document.getElementById('plan-price-display').textContent = appState.siteConfig.price;
-            document.getElementById('instapay-amount-display').textContent = appState.siteConfig.price + " جنيه";
-            document.getElementById('instapay-amount-num-only').textContent = appState.siteConfig.price;
-            document.getElementById('wallet-amount-display').textContent = appState.siteConfig.price + " جنيه";
-            document.getElementById('wallet-strict-amount').textContent = appState.siteConfig.price;
             document.getElementById('hero-subtext').textContent = appState.siteConfig.heroSubtext;
-            document.getElementById('hero-badge-text').textContent = appState.siteConfig.badgeText || "الوسط الأرقى للتعارف والزواج الشرعي المباشر";
-            document.getElementById('hero-card-title-text').textContent = appState.siteConfig.heroCardTitle || "طلبات زواج جادة وموثوقة";
-
-            if (appState.siteConfig.heroFeaturedImg) {
-                document.getElementById('hero-featured-img').src = appState.siteConfig.heroFeaturedImg;
-            }
-
-            const headingParts = appState.siteConfig.heroHeading.split(' ');
-            if(headingParts.length > 3) {
-                const mid = Math.floor(headingParts.length / 2);
-                document.getElementById('hero-heading').innerHTML = `${headingParts.slice(0, mid).join(' ')} <span class="gold-gradient-text">${headingParts.slice(mid).join(' ')}</span>`;
-            } else {
-                document.getElementById('hero-heading').textContent = appState.siteConfig.heroHeading;
-            }
-
-            // InstaPay Values
-            document.getElementById('instapay-bank-display').textContent = appState.wallets.instapayBank || "البنك الأهلي المصري";
-            document.getElementById('instapay-name-display').textContent = appState.wallets.instapayName || "ادارة منصة زواج VIP";
-            document.getElementById('instapay-iban-display').textContent = appState.wallets.instapayIban || "EG890002000100000234567890123";
-            document.getElementById('instapay-ipn-display').textContent = appState.wallets.instapayIpn || "zawajvip@instapay";
-
-            if (selectedPaymentMethod === 'orange') {
-                document.getElementById('wallet-title-header').textContent = "Orange Cash";
-                document.getElementById('wallet-number-display').textContent = appState.wallets.orange;
-            } else if (selectedPaymentMethod === 'etisalat') {
-                document.getElementById('wallet-title-header').textContent = "Etisalat Cash";
-                document.getElementById('wallet-number-display').textContent = appState.wallets.etisalat;
-            }
-
-            document.getElementById('wallet-fb-link').href = appState.wallets.fbLink || "https://facebook.com";
-
-            // Auth Buttons
-            const authContainer = document.getElementById('auth-buttons-container');
-            if (appState.currentUser) {
-                authContainer.innerHTML = `
-                    <div class="flex items-center gap-2">
-                        <div class="text-right">
-                            <span class="block text-xs font-bold text-white">${appState.currentUser.name}</span>
-                            <span class="block text-[10px] ${appState.currentUser.isActive ? 'text-green-400 font-bold' : 'text-amber-400'}">
-                                ${appState.currentUser.isActive ? '✓ عضوية مفعلة VIP' : 'بانتظار التفعيل'}
-                            </span>
-                        </div>
-                        <button onclick="handleLogout()" class="p-2 text-gray-400 hover:text-red-400 text-sm" title="تسجيل الخروج">
-                            <i class="fa-solid fa-right-from-bracket"></i>
-                        </button>
-                    </div>
-                `;
-            } else {
-                authContainer.innerHTML = `
-                    <button onclick="openAuthModal('login')" class="text-xs sm:text-sm font-bold text-white hover:text-gold-400 px-3 py-2 transition">
-                        تسجيل الدخول
-                    </button>
-                    <button onclick="openAuthModal('signup')" class="gold-btn text-xs sm:text-sm px-4 py-2 rounded-xl">
-                        حساب جديد
-                    </button>
-                `;
-            }
-
-            // Profiles Grid
+            
             const profilesGrid = document.getElementById('profiles-grid');
             profilesGrid.innerHTML = '';
-            
             appState.profiles.forEach(prof => {
-                const isUnlocked = appState.currentUser && appState.currentUser.isActive;
-                
                 profilesGrid.innerHTML += `
-                    <div class="glass-card glass-card-hover rounded-2xl overflow-hidden border border-gold-500/20 flex flex-col justify-between">
-                        <div>
-                            <div class="relative h-64 overflow-hidden">
-                                <img src="${prof.img}" alt="${prof.name}" class="w-full h-full object-cover">
-                                <div class="absolute inset-0 bg-gradient-to-t from-crimson-950 via-transparent to-transparent"></div>
-                                <span class="absolute top-3 right-3 bg-crimson-900/90 text-gold-300 text-[11px] font-bold px-2.5 py-1 rounded-full border border-gold-500/30">
-                                    <i class="fa-solid fa-location-dot ml-1"></i>${prof.city}
-                                </span>
-                            </div>
-                            <div class="p-4 space-y-2 text-right">
-                                <div class="flex justify-between items-center">
-                                    <h3 class="text-lg font-bold text-white">${prof.name}</h3>
-                                    <span class="text-xs font-bold text-gold-400 bg-gold-500/10 px-2 py-0.5 rounded">${prof.age} سنة</span>
-                                </div>
-                                <p class="text-xs text-gray-300"><i class="fa-solid fa-briefcase text-gold-500 ml-1"></i>${prof.job}</p>
-                            </div>
-                        </div>
-
-                        <div class="p-4 pt-0">
-                            ${isUnlocked ? `
-                                <div class="bg-green-950/80 border border-green-500/40 p-3 rounded-xl text-center space-y-1">
-                                    <span class="text-[10px] text-green-300 font-bold block">تم التفعيل - رقم التواصل:</span>
-                                    <a href="https://wa.me/${prof.phone}" target="_blank" class="text-sm font-black text-gold-300 hover:underline flex items-center justify-center gap-1">
-                                        <i class="fa-brands fa-whatsapp text-green-400"></i> ${prof.phone}
-                                    </a>
-                                </div>
-                            ` : `
-                                <button onclick="handleMainCTA()" class="w-full py-2.5 bg-black/40 hover:bg-gold-500 hover:text-black border border-gold-500/30 text-gold-300 rounded-xl font-bold text-xs transition flex items-center justify-center gap-2">
-                                    <i class="fa-solid fa-lock text-gold-400"></i>
-                                    <span>إظهار الرقم ووسائل التواصل</span>
-                                </button>
-                            `}
-                        </div>
+                    <div class="glass-card rounded-2xl overflow-hidden border border-gold-500/20 p-4 text-right space-y-2">
+                        <img src="${prof.img}" class="w-full h-48 object-cover rounded-xl">
+                        <h3 class="text-lg font-bold text-white">${prof.name} (${prof.age}) - ${prof.city}</h3>
+                        <p class="text-xs text-gray-300">${prof.job}</p>
                     </div>
                 `;
             });
-
-            // Populate Admin Inputs
             document.getElementById('adm-site-title').value = appState.siteConfig.title;
             document.getElementById('adm-plan-price').value = appState.siteConfig.price;
-            document.getElementById('adm-badge-text').value = appState.siteConfig.badgeText || "الوسط الأرقى للتعارف والزواج الشرعي المباشر";
-            document.getElementById('adm-hero-head').value = appState.siteConfig.heroHeading;
-            document.getElementById('adm-hero-sub').value = appState.siteConfig.heroSubtext;
-            document.getElementById('adm-card-title').value = appState.siteConfig.heroCardTitle || "طلبات زواج جادة وموثوقة";
-
-            document.getElementById('adm-ip-bank').value = appState.wallets.instapayBank || "";
-            document.getElementById('adm-ip-name').value = appState.wallets.instapayName || "";
-            document.getElementById('adm-ip-iban').value = appState.wallets.instapayIban || "";
-            document.getElementById('adm-ip-ipn').value = appState.wallets.instapayIpn || "";
-
-            document.getElementById('adm-orange-num').value = appState.wallets.orange;
-            document.getElementById('adm-etisalat-num').value = appState.wallets.etisalat;
-            document.getElementById('adm-fb-link').value = appState.wallets.fbLink || "";
-
-            // Admin Profiles List Render
-            const admProfList = document.getElementById('adm-profiles-list');
-            admProfList.innerHTML = '';
-            appState.profiles.forEach(p => {
-                admProfList.innerHTML += `
-                    <div class="bg-black/50 border border-gold-500/20 p-2.5 rounded-xl flex items-center justify-between">
-                        <div class="flex items-center gap-3">
-                            <img src="${p.img}" class="w-10 h-10 rounded-xl object-cover border border-gold-500/30">
-                            <div>
-                                <span class="block text-xs font-bold text-white">${p.name} (${p.age} سنة - ${p.city})</span>
-                                <span class="block text-[10px] text-gray-400">${p.job} | ${p.phone}</span>
-                            </div>
-                        </div>
-                        <div class="flex gap-2">
-                            <button onclick="editProfile(${p.id})" class="text-xs bg-gold-500/20 text-gold-300 px-2.5 py-1 rounded-lg hover:bg-gold-500 hover:text-black transition">تعديل</button>
-                            <button onclick="deleteProfile(${p.id})" class="text-xs bg-red-900/40 text-red-300 px-2.5 py-1 rounded-lg hover:bg-red-800 transition">حذف</button>
-                        </div>
-                    </div>
-                `;
-            });
-
-            // Admin Requests List Render
-            const admReqList = document.getElementById('adm-requests-list');
-            admReqList.innerHTML = '';
-            
-            const pendingReqs = appState.paymentRequests.filter(r => r.status === 'pending');
-            const badge = document.getElementById('admin-pending-badge');
-            if(pendingReqs.length > 0) {
-                badge.textContent = pendingReqs.length;
-                badge.classList.remove('hidden');
-            } else {
-                badge.classList.add('hidden');
-            }
-
-            if(appState.paymentRequests.length === 0) {
-                admReqList.innerHTML = `<p class="text-xs text-gray-400 text-center py-4">لا توجد طلبات تحويل حتّى الآن.</p>`;
-            } else {
-                appState.paymentRequests.forEach((req, idx) => {
-                    admReqList.innerHTML += `
-                        <div class="bg-black/60 border border-gold-500/30 p-3.5 rounded-xl space-y-2">
-                            <div class="flex justify-between items-start">
-                                <div>
-                                    <span class="text-xs font-bold text-gold-300 block">اسم/رقم التحويل: ${req.fullName}</span>
-                                    <span class="text-[11px] text-gray-300 block">حساب العضو: ${req.userPhone}</span>
-                                    <span class="text-[10px] text-gray-400 block">طريقة التحويل: ${req.method}</span>
-                                </div>
-                                <span class="text-[10px] font-bold px-2 py-0.5 rounded ${req.status === 'approved' ? 'bg-green-900/80 text-green-300 border border-green-500/30' : 'bg-amber-900/80 text-amber-300 border border-amber-500/30'}">
-                                    ${req.status === 'approved' ? 'مفعل ومقبول' : 'بانتظار التفعيل'}
-                                </span>
-                            </div>
-                            ${req.proofImg ? `
-                                <div class="pt-1">
-                                    <span class="text-[10px] text-gray-400 block mb-1">إيصال التحويل المرفوع:</span>
-                                    <a href="${req.proofImg}" target="_blank">
-                                        <img src="${req.proofImg}" class="max-h-32 rounded-lg border border-gold-500/40 hover:opacity-80 transition">
-                                    </a>
-                                </div>
-                            ` : ''}
-                            ${req.status === 'pending' ? `
-                                <button onclick="approvePaymentRequest(${idx})" class="w-full mt-2 py-2 bg-green-600 hover:bg-green-500 text-white font-bold text-xs rounded-xl transition">
-                                    ✓ موافقة وتفعيل العضوية فوراً
-                                </button>
-                            ` : ''}
-                        </div>
-                    `;
-                });
-            }
-        }
-
-        function switchPaymentMethod(method) {
-            selectedPaymentMethod = method;
-            const btnInstapay = document.getElementById('pay-tab-instapay');
-            const btnOrange = document.getElementById('pay-tab-orange');
-            const btnEtisalat = document.getElementById('pay-tab-etisalat');
-
-            const secInstapay = document.getElementById('pay-sec-instapay');
-            const secWallets = document.getElementById('pay-sec-wallets');
-
-            [btnInstapay, btnOrange, btnEtisalat].forEach(b => {
-                b.className = "py-2.5 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5 text-gray-300 hover:text-white";
-            });
-
-            if (method === 'instapay') {
-                btnInstapay.className = "py-2.5 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow";
-                secInstapay.classList.remove('hidden');
-                secWallets.classList.add('hidden');
-            } else if (method === 'orange') {
-                btnOrange.className = "py-2.5 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5 bg-gradient-to-r from-orange-500 to-amber-600 text-white shadow";
-                secInstapay.classList.add('hidden');
-                secWallets.classList.remove('hidden');
-            } else if (method === 'etisalat') {
-                btnEtisalat.className = "py-2.5 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5 bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow";
-                secInstapay.classList.add('hidden');
-                secWallets.classList.remove('hidden');
-            }
-
-            renderUI();
-        }
-
-        function handleProofFileSelect(e) {
-            const file = e.target.files[0];
-            if (file) {
-                document.getElementById('proof-file-name').textContent = file.name;
-                const reader = new FileReader();
-                reader.onload = function(evt) {
-                    currentUploadedProofBase64 = evt.target.result;
-                    document.getElementById('proof-preview-img').src = evt.target.result;
-                    document.getElementById('proof-preview-container').classList.remove('hidden');
-                }
-                reader.readAsDataURL(file);
-            }
-        }
-
-        function previewProfileFileImage(e) {
-            const file = e.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(evt) {
-                    currentProfileBase64 = evt.target.result;
-                    document.getElementById('prof-preview-img').src = evt.target.result;
-                    document.getElementById('prof-preview-container').classList.remove('hidden');
-                }
-                reader.readAsDataURL(file);
-            }
-        }
-
-        function handleHeroImgUpload(e) {
-            const file = e.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(evt) {
-                    newHeroImgBase64 = evt.target.result;
-                    document.getElementById('hero-img-preview').src = evt.target.result;
-                    document.getElementById('hero-img-preview-box').classList.remove('hidden');
-                }
-                reader.readAsDataURL(file);
-            }
-        }
-
-        function handleMainCTA() {
-            if (!appState.currentUser) {
-                openAuthModal('signup');
-                showToast("يرجى تسجيل الدخول أو إنشاء حساب جديد أولاً", "info");
-            } else if (!appState.currentUser.isActive) {
-                openModal('checkout-modal');
-            } else {
-                showToast("حسابك مفعل بالفعل! يمكنك التواصل مع كافة العضوات", "success");
-            }
-        }
-
-        function handleSubscribeClick() { handleMainCTA(); }
-        function openModal(id) { document.getElementById(id).classList.remove('hidden'); }
-        function closeModal(id) { document.getElementById(id).classList.add('hidden'); }
-
-        function openAuthModal(tab = 'signup') {
-            switchAuthTab(tab);
-            openModal('auth-modal');
-        }
-
-        function switchAuthTab(tab) {
-            const signupBtn = document.getElementById('tab-signup-btn');
-            const loginBtn = document.getElementById('tab-login-btn');
-            const signupForm = document.getElementById('signup-form');
-            const loginForm = document.getElementById('login-form');
-
-            if (tab === 'signup') {
-                signupBtn.className = "w-1/2 text-center pb-2 font-bold text-gold-400 border-b-2 border-gold-400";
-                loginBtn.className = "w-1/2 text-center pb-2 font-bold text-gray-400 hover:text-white";
-                signupForm.classList.remove('hidden');
-                loginForm.classList.add('hidden');
-            } else {
-                loginBtn.className = "w-1/2 text-center pb-2 font-bold text-gold-400 border-b-2 border-gold-400";
-                signupBtn.className = "w-1/2 text-center pb-2 font-bold text-gray-400 hover:text-white";
-                loginForm.classList.remove('hidden');
-                signupForm.classList.add('hidden');
-            }
-        }
-
-        function handleSignup(e) {
-            e.preventDefault();
-            appState.currentUser = {
-                name: document.getElementById('signup-name').value,
-                phone: document.getElementById('signup-phone').value,
-                isActive: false
-            };
-            saveState();
-            closeModal('auth-modal');
-            showToast("تم إنشاء الحساب بنجاح! تفضل بإنهاء التفعيل", "success");
-            openModal('checkout-modal');
-        }
-
-        function handleLogin(e) {
-            e.preventDefault();
-            const phone = document.getElementById('login-phone').value;
-            const existingReq = appState.paymentRequests.find(r => r.userPhone === phone && r.status === 'approved');
-
-            appState.currentUser = {
-                name: "عضو زواج VIP",
-                phone: phone,
-                isActive: !!existingReq
-            };
-            saveState();
-            closeModal('auth-modal');
-            showToast("تم تسجيل الدخول بنجاح", "success");
-        }
-
-        function handleLogout() {
-            appState.currentUser = null;
-            saveState();
-            showToast("تم تسجيل الخروج", "info");
-        }
-
-        function handleProofSubmit(e) {
-            e.preventDefault();
-            if (!appState.currentUser) {
-                showToast("يرجى تسجيل الدخول أولاً", "error");
-                return;
-            }
-
-            if (!currentUploadedProofBase64) {
-                showToast("يرجى رفع صورة إيصال التحويل أولاً", "error");
-                return;
-            }
-
-            let methodName = "إنستا باي (InstaPay)";
-            if (selectedPaymentMethod === 'orange') methodName = "أورانج كاش (Orange Cash)";
-            if (selectedPaymentMethod === 'etisalat') methodName = "اتصالات كاش (Etisalat Cash)";
-
-            appState.paymentRequests.push({
-                fullName: document.getElementById('proof-fullname').value,
-                method: methodName,
-                userPhone: appState.currentUser.phone,
-                proofImg: currentUploadedProofBase64,
-                status: 'pending',
-                timestamp: new Date().toISOString()
-            });
-
-            currentUploadedProofBase64 = "";
-            document.getElementById('proof-file-name').textContent = "لم يتم اختيار صورة";
-            document.getElementById('proof-preview-container').classList.add('hidden');
-            
-            saveState();
-            closeModal('checkout-modal');
-            showToast("تم إرسال وتأكيد التحويل بنجاح! جاري المراجعة والتفعيل", "success");
-        }
-
-        function copyToClipboard(elementId) {
-            const text = document.getElementById(elementId).textContent.trim();
-            const tempInput = document.createElement("input");
-            tempInput.value = text;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand("copy");
-            document.body.removeChild(tempInput);
-            showToast(`تم النسخ بنجاح: ${text}`, "success");
-        }
-
-        // ADMIN FUNCTIONS
-        function promptAdminLogin() {
-            const pass = prompt("أدخل كلمة المرور الخاصة بـ لوحة التحكم:");
-            const correctPass = appState.adminPassword || "admin123";
-            if (pass === correctPass) {
-                openModal('admin-modal');
-            } else if (pass !== null) {
-                alert("كلمة المرور غير صحيحة!");
-            }
-        }
-
-        function switchAdminTab(tab) {
-            ['general', 'wallets', 'profiles', 'requests', 'security'].forEach(t => {
-                document.getElementById(`admin-sec-${t}`).classList.add('hidden');
-                document.getElementById(`adm-tab-${t}`).className = "px-3.5 py-2 rounded-xl text-xs font-bold bg-black/40 text-gray-300 hover:text-white";
-            });
-
-            document.getElementById(`admin-sec-${tab}`).classList.remove('hidden');
-            document.getElementById(`adm-tab-${tab}`).className = "px-3.5 py-2 rounded-xl text-xs font-bold bg-gold-500 text-black";
         }
 
         function saveAdminGeneralSettings() {
             appState.siteConfig.title = document.getElementById('adm-site-title').value;
             appState.siteConfig.price = document.getElementById('adm-plan-price').value;
-            appState.siteConfig.badgeText = document.getElementById('adm-badge-text').value;
-            appState.siteConfig.heroHeading = document.getElementById('adm-hero-head').value;
-            appState.siteConfig.heroSubtext = document.getElementById('adm-hero-sub').value;
-            appState.siteConfig.heroCardTitle = document.getElementById('adm-card-title').value;
-
-            if (newHeroImgBase64) {
-                appState.siteConfig.heroFeaturedImg = newHeroImgBase64;
-                newHeroImgBase64 = "";
-            }
-
             saveState();
-            showToast("تم حفظ الإعدادات والصورة والنصوص بنجاح", "success");
+            closeModal('admin-modal');
         }
 
-        function saveAdminWalletSettings() {
-            appState.wallets.instapayBank = document.getElementById('adm-ip-bank').value;
-            appState.wallets.instapayName = document.getElementById('adm-ip-name').value;
-            appState.wallets.instapayIban = document.getElementById('adm-ip-iban').value;
-            appState.wallets.instapayIpn = document.getElementById('adm-ip-ipn').value;
-
-            appState.wallets.orange = document.getElementById('adm-orange-num').value;
-            appState.wallets.etisalat = document.getElementById('adm-etisalat-num').value;
-            appState.wallets.fbLink = document.getElementById('adm-fb-link').value;
-            saveState();
-            showToast("تم تحديث أرقام المحافظ وبيانات الدفع بنجاح", "success");
+        function promptAdminLogin() {
+            const pass = prompt("كلمة المرور:");
+            if (pass === (appState.adminPassword || "admin123")) openModal('admin-modal');
         }
 
-        function changeAdminPassword() {
-            const newPass = document.getElementById('adm-new-pass').value.trim();
-            if (newPass.length < 4) {
-                showToast("كلمة المرور يجب أن تكون 4 أحرف/أرقام على الأقل", "error");
-                return;
-            }
-            appState.adminPassword = newPass;
-            saveState();
-            showToast("تم تغيير كلمة مرور لوحة التحكم بنجاح", "success");
-        }
+        function openModal(id) { document.getElementById(id).classList.remove('hidden'); }
+        function closeModal(id) { document.getElementById(id).classList.add('hidden'); }
 
-        function openAddProfileModal() {
-            document.getElementById('add-profile-title').textContent = "إضافة عضوة جديدة بملف صورة من الجهاز";
-            document.getElementById('prof-edit-id').value = "";
-            document.getElementById('prof-name').value = "";
-            document.getElementById('prof-age').value = "";
-            document.getElementById('prof-city').value = "";
-            document.getElementById('prof-job').value = "";
-            document.getElementById('prof-phone').value = "";
-            document.getElementById('prof-file-input').value = "";
-            document.getElementById('prof-preview-container').classList.add('hidden');
-            currentProfileBase64 = "";
-            openModal('add-profile-modal');
-        }
-
-        function editProfile(id) {
-            const p = appState.profiles.find(item => item.id === id);
-            if (!p) return;
-
-            document.getElementById('add-profile-title').textContent = "تعديل بيانات وصورة العضوة";
-            document.getElementById('prof-edit-id').value = p.id;
-            document.getElementById('prof-name').value = p.name;
-            document.getElementById('prof-age').value = p.age;
-            document.getElementById('prof-city').value = p.city;
-            document.getElementById('prof-job').value = p.job;
-            document.getElementById('prof-phone').value = p.phone;
-
-            currentProfileBase64 = p.img;
-            document.getElementById('prof-preview-img').src = p.img;
-            document.getElementById('prof-preview-container').classList.remove('hidden');
-
-            openModal('add-profile-modal');
-        }
-
-        function handleSaveProfile(e) {
-            e.preventDefault();
-            const editId = document.getElementById('prof-edit-id').value;
-            
-            if (!currentProfileBase64) {
-                showToast("يرجى اختيار صورة العضوة من جهازك أولاً", "error");
-                return;
-            }
-
-            const profileData = {
-                id: editId ? parseInt(editId) : Date.now(),
-                name: document.getElementById('prof-name').value,
-                age: document.getElementById('prof-age').value,
-                city: document.getElementById('prof-city').value,
-                job: document.getElementById('prof-job').value,
-                img: currentProfileBase64,
-                phone: document.getElementById('prof-phone').value,
-            };
-
-            if (editId) {
-                const idx = appState.profiles.findIndex(p => p.id === parseInt(editId));
-                if (idx !== -1) appState.profiles[idx] = profileData;
-            } else {
-                appState.profiles.unshift(profileData);
-            }
-
-            currentProfileBase64 = "";
-            saveState();
-            closeModal('add-profile-modal');
-            showToast("تم حفظ وتحديث ملف العضوة بنجاح!", "success");
-        }
-
-        function deleteProfile(id) {
-            appState.profiles = appState.profiles.filter(p => p.id !== id);
-            saveState();
-            showToast("تم حذف ملف العضوة من المعرض", "info");
-        }
-
-        function approvePaymentRequest(index) {
-            const req = appState.paymentRequests[index];
-            if (req.status === 'pending') {
-                req.status = 'approved';
-                if (appState.currentUser && appState.currentUser.phone === req.userPhone) {
-                    appState.currentUser.isActive = true;
-                }
-                saveState();
-                showToast(`تم تفعيل حساب العضو (${req.fullName}) بنجاح!`, "success");
-            }
-        }
-
-        function showToast(msg, type = "success") {
+        function showToast(msg) {
             const toast = document.getElementById('toast');
             document.getElementById('toast-message').textContent = msg;
             toast.classList.remove('translate-y-20', 'opacity-0');
-            setTimeout(() => {
-                toast.classList.add('translate-y-20', 'opacity-0');
-            }, 3500);
+            setTimeout(() => toast.classList.add('translate-y-20', 'opacity-0'), 3500);
         }
     </script>
 </body>
