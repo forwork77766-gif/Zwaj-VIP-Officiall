@@ -30,8 +30,6 @@
         .gold-btn { background: linear-gradient(135deg, #d9b308 0%, #b38b03 100%); color: #000; font-weight: 800; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(217, 179, 8, 0.3); }
         .gold-btn:hover { background: linear-gradient(135deg, #fada1b 0%, #d9b308 100%); box-shadow: 0 6px 20px rgba(217, 179, 8, 0.5); transform: translateY(-2px); }
         .glass-card { background: rgba(38, 1, 9, 0.75); backdrop-filter: blur(14px); border: 1px solid rgba(217, 179, 8, 0.25); }
-        .glass-card-hover { transition: all 0.3s ease; }
-        .glass-card-hover:hover { border-color: rgba(217, 179, 8, 0.6); transform: translateY(-4px); box-shadow: 0 10px 25px rgba(217, 179, 8, 0.15); }
         .custom-scrollbar::-webkit-scrollbar { width: 6px; }
         .custom-scrollbar::-webkit-scrollbar-track { background: #1a030a; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #d9b308; border-radius: 4px; }
@@ -75,10 +73,6 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7 text-center lg:text-right space-y-6">
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-crimson-900/80 border border-gold-500/30 text-gold-300 text-xs sm:text-sm font-bold">
-                        <i class="fa-solid fa-gem text-gold-400"></i>
-                        <span id="hero-badge-text">الوسط الأرقى للتعارف والزواج الشرعي المباشر</span>
-                    </div>
                     <h1 id="hero-heading" class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
                         شريك حياتك المناسب يبدأ بـ <span class="gold-gradient-text">خطوة جادة وآمنة</span>
                     </h1>
@@ -88,30 +82,8 @@
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
                         <button onclick="handleMainCTA()" class="gold-btn w-full sm:w-auto px-8 py-4 rounded-xl text-lg flex items-center justify-center gap-2">
                             <i class="fa-solid fa-crown text-black"></i>
-                            <span id="hero-cta-btn">سجل الآن واشترك فوراً</span>
+                            <span>سجل الآن واشترك فوراً</span>
                         </button>
-                        <a href="#profiles" class="w-full sm:w-auto px-8 py-4 rounded-xl text-lg font-bold bg-white/5 hover:bg-white/10 text-white border border-white/10 flex items-center justify-center gap-2 transition">
-                            <i class="fa-solid fa-users text-gold-400"></i>
-                            <span>استعرض العضوات</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="lg:col-span-5 relative flex justify-center">
-                    <div class="relative w-full max-w-md">
-                        <div class="glass-card rounded-3xl p-6 border border-gold-500/30 text-center">
-                            <div class="relative h-80 rounded-2xl overflow-hidden mb-6 border border-gold-500/20">
-                                <img id="hero-featured-img" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800" alt="عضوية مميزة" class="w-full h-full object-cover">
-                                <div class="absolute inset-0 bg-gradient-to-t from-crimson-950 via-transparent to-transparent"></div>
-                                <div class="absolute bottom-4 right-4 left-4 text-right">
-                                    <span class="inline-block bg-gold-500 text-black font-extrabold text-xs px-2.5 py-1 rounded-md mb-1">عضوية VIP موثقة</span>
-                                    <h3 id="hero-card-title-text" class="text-xl font-bold text-white">طلبات زواج جادة وموثوقة</h3>
-                                </div>
-                            </div>
-                            <button onclick="handleMainCTA()" class="w-full py-3.5 bg-crimson-800 hover:bg-crimson-900 text-gold-300 border border-gold-500/40 rounded-xl font-bold text-sm transition flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-lock-open text-gold-400"></i>
-                                <span>تفعيل العضوية لرؤية وسائل التواصل</span>
-                            </button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -121,39 +93,9 @@
     <section id="profiles" class="py-20 bg-crimson-950/40 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
-                    معرض <span class="gold-gradient-text">العضوات والطلبات المتاحة</span>
-                </h2>
-                <p class="text-gray-300 text-sm sm:text-base">نماذج من طلبات التعارف والزواج الجاد. يمكنك الحصول على وسائل التواصل المباشرة فور تفعيل العضوية.</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">معرض <span class="gold-gradient-text">العضوات والطلبات المتاحة</span></h2>
             </div>
             <div id="profiles-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
-        </div>
-    </section>
-
-    <section id="pricing" class="py-20 relative">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center space-y-4 mb-12">
-                <span class="inline-block bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs px-4 py-1.5 rounded-full font-bold">الباقة الموحدة والشاملة</span>
-                <h2 class="text-3xl sm:text-5xl font-black text-white">تفعيل العضوية والاشتراك</h2>
-            </div>
-            <div class="glass-card rounded-3xl p-8 sm:p-12 border-2 border-gold-500/50 shadow-2xl relative overflow-hidden">
-                <div class="text-center space-y-6">
-                    <h3 class="text-2xl font-bold text-white">باقة العضوية الذهبية VIP</h3>
-                    <div class="flex items-center justify-center gap-2">
-                        <span id="plan-price-display" class="text-5xl sm:text-6xl font-black gold-gradient-text">299</span>
-                        <div class="text-right">
-                            <span class="block text-xl font-bold text-gold-400">ج.م</span>
-                            <span class="block text-xs text-gray-400">تفعيل مدى الحياة</span>
-                        </div>
-                    </div>
-                    <div class="pt-6">
-                        <button onclick="handleMainCTA()" class="gold-btn w-full py-4 rounded-xl text-lg flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-bolt text-black"></i>
-                            <span>اشترك الآن وفعّل عضويتك</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -162,110 +104,54 @@
         <button onclick="promptAdminLogin()" class="absolute bottom-2 right-2 w-4 h-4 opacity-0 hover:opacity-100 bg-gold-500/20 cursor-pointer rounded" title="إدارة"></button>
     </footer>
 
-    <!-- MODALS -->
-    <div id="auth-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm">
-        <div class="relative w-full max-w-md glass-card rounded-2xl border border-gold-500/40 p-6 space-y-6">
-            <button onclick="closeModal('auth-modal')" class="absolute top-4 left-4 text-gray-400 hover:text-white"><i class="fa-solid fa-xmark text-xl"></i></button>
-            <div class="flex border-b border-gold-500/20 pb-2">
-                <button id="tab-signup-btn" onclick="switchAuthTab('signup')" class="w-1/2 text-center pb-2 font-bold text-gold-400 border-b-2 border-gold-400">إنشاء حساب جديد</button>
-                <button id="tab-login-btn" onclick="switchAuthTab('login')" class="w-1/2 text-center pb-2 font-bold text-gray-400 hover:text-white">تسجيل الدخول</button>
-            </div>
-            <form id="signup-form" onsubmit="handleSignup(event)" class="space-y-4">
-                <div><label class="block text-xs text-gray-300 font-bold mb-1">الاسم بالكامل</label><input type="text" id="signup-name" required class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-4 py-2.5 text-sm text-white"></div>
-                <div><label class="block text-xs text-gray-300 font-bold mb-1">رقم الهاتف / الواتساب</label><input type="tel" id="signup-phone" required class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-4 py-2.5 text-sm text-white" dir="ltr"></div>
-                <div><label class="block text-xs text-gray-300 font-bold mb-1">كلمة المرور</label><input type="password" id="signup-pass" required class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-4 py-2.5 text-sm text-white"></div>
-                <button type="submit" class="gold-btn w-full py-3 rounded-xl font-bold text-sm">تسجيل الحساب والمتابعة</button>
-            </form>
-            <form id="login-form" onsubmit="handleLogin(event)" class="space-y-4 hidden">
-                <div><label class="block text-xs text-gray-300 font-bold mb-1">رقم الهاتف</label><input type="tel" id="login-phone" required class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-4 py-2.5 text-sm text-white" dir="ltr"></div>
-                <div><label class="block text-xs text-gray-300 font-bold mb-1">كلمة المرور</label><input type="password" id="login-pass" required class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-4 py-2.5 text-sm text-white"></div>
-                <button type="submit" class="gold-btn w-full py-3 rounded-xl font-bold text-sm">دخول للحساب</button>
-            </form>
-        </div>
-    </div>
-
-    <div id="checkout-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-3 sm:p-4 bg-black/90 backdrop-blur-md">
-        <div class="relative w-full max-w-2xl bg-gradient-to-b from-blue-950 via-slate-900 to-indigo-950 rounded-2xl border border-blue-500/40 p-4 sm:p-6 space-y-5 max-h-[94vh] overflow-y-auto custom-scrollbar text-right">
-            <button onclick="closeModal('checkout-modal')" class="absolute top-4 left-4 text-gray-400 hover:text-white"><i class="fa-solid fa-xmark text-2xl"></i></button>
-            <h3 class="text-xl font-black text-white text-center">اختر طريقة الدفع لتفعيل العضوية</h3>
-            <form onsubmit="handleProofSubmit(event)" class="bg-white text-slate-900 p-4 rounded-2xl space-y-4">
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 mb-1">صورة التحويل *</label>
-                    <input type="file" id="proof-file-input" accept="image/*" required onchange="handleProofFileSelect(event)" class="w-full text-xs">
-                </div>
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 mb-1">رقم الموبايل / الاسم *</label>
-                    <input type="text" id="proof-fullname" required class="w-full bg-gray-50 border rounded-xl px-4 py-2 text-sm">
-                </div>
-                <button type="submit" class="w-full bg-emerald-600 text-white py-3 rounded-xl font-bold text-sm">إرسال وتأكيد التحويل</button>
-            </form>
-        </div>
-    </div>
-
-    <div id="admin-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-3 sm:p-4 bg-black/90 backdrop-blur-md">
-        <div class="relative w-full max-w-4xl glass-card rounded-2xl border border-gold-500/50 p-6 space-y-5 max-h-[92vh] overflow-y-auto custom-scrollbar text-right">
+    <!-- ADMIN MODAL -->
+    <div id="admin-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-3 bg-black/90 backdrop-blur-md">
+        <div class="relative w-full max-w-xl glass-card rounded-2xl border border-gold-500/50 p-6 space-y-4 text-right">
             <button onclick="closeModal('admin-modal')" class="absolute top-4 left-4 text-gray-400 hover:text-white"><i class="fa-solid fa-xmark text-2xl"></i></button>
-            <h3 class="text-xl font-bold text-white">لوحة التحكم الإدارية الشاملة</h3>
-            <div class="space-y-4">
-                <div><label class="block text-xs text-gray-300 mb-1">اسم الموقع</label><input type="text" id="adm-site-title" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white"></div>
-                <div><label class="block text-xs text-gray-300 mb-1">سعر الباقة</label><input type="number" id="adm-plan-price" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white"></div>
-                <button onclick="saveAdminGeneralSettings()" class="gold-btn px-6 py-2 rounded-xl text-xs font-bold">حفظ التغييرات سحابياً</button>
-            </div>
+            <h3 class="text-xl font-bold text-white">لوحة التحكم</h3>
+            <div><label class="block text-xs text-gray-300 mb-1">اسم الموقع</label><input type="text" id="adm-site-title" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white"></div>
+            <div><label class="block text-xs text-gray-300 mb-1">سعر الباقة</label><input type="number" id="adm-plan-price" class="w-full bg-crimson-900/60 border border-gold-500/30 rounded-xl px-3 py-2 text-xs text-white"></div>
+            <button onclick="saveAdminGeneralSettings()" class="gold-btn px-6 py-2 rounded-xl text-xs font-bold">حفظ سحابياً في جدول البيانات</button>
         </div>
     </div>
 
     <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 max-w-xs bg-crimson-900 text-white border border-gold-500/50 p-3.5 rounded-xl shadow-2xl flex items-center gap-3">
-        <i class="fa-solid fa-circle-check text-gold-400 text-lg"></i>
         <span id="toast-message" class="text-xs font-bold">تمت العملية بنجاح</span>
     </div>
 
     <script>
-        const BIN_ID = "6ad06e4aac6210605a32d179";
-        const API_KEY = "$2a$10$26l8Rdkkd6DLLuP87EnBeE809EXIx5iSGxWzxiglrtw9vvPkg8W9y";
+        const API_URL = "https://script.google.com/macros/s/AKfycbyqQFpPq_ady0uw4C2KcwUvuthGLFv33mr-WlkC0F60oF3org4lOD5PO2DUZeo9TQVdCg/exec";
 
         let appState = {
             adminPassword: "admin123",
-            siteConfig: { title: "زواج VIP", price: 299, badgeText: "الوسط الأرقى للتعارف", heroHeading: "شريك حياتك المناسب يبدأ بـ خطوة جادة", heroSubtext: "منصة زواج VIP...", heroFeaturedImg: "", heroCardTitle: "طلبات جادة وموثوقة" },
-            wallets: { orange: "01200000000", etisalat: "01100000000" },
-            profiles: [
-                { id: 1, name: "مريم م.", age: 26, city: "القاهرة", job: "طبيبة أسنان", img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600", phone: "01011122334" }
-            ],
-            paymentRequests: [],
+            siteConfig: { title: "زواج VIP", price: 299, heroSubtext: "منصة زواج VIP..." },
+            profiles: [{ id: 1, name: "مريم م.", age: 26, city: "القاهرة", job: "طبيبة أسنان", img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600", phone: "01011122334" }],
             currentUser: null
         };
 
-        let currentUploadedProofBase64 = '';
-
         async function loadDataFromCloud() {
             try {
-                let response = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
-                    headers: { 'X-Master-Key': API_KEY }
-                });
+                let response = await fetch(API_URL);
                 let data = await response.json();
-                if (data && data.record) {
-                    appState = data.record;
+                if (data && data.siteConfig) {
+                    appState = data;
                 }
                 renderUI();
             } catch (error) {
-                console.log("استخدام البيانات المحلية لعدم الاتصال السحابي");
                 renderUI();
             }
         }
 
         async function saveState() {
             try {
-                await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}`, {
-                    method: 'PUT',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'X-Master-Key': API_KEY
-                    },
+                await fetch(API_URL, {
+                    method: 'POST',
                     body: JSON.stringify(appState)
                 });
-                showToast("تم تحديث وحفظ البيانات سحابياً للجميع بنجاح", "success");
+                showToast("تم الحفظ في قاعدة البيانات بنجاح للجميع");
                 renderUI();
             } catch (error) {
-                showToast("خطأ أثناء الحفظ السحابي", "error");
+                showToast("خطأ أثناء الحفظ السحابي");
             }
         }
 
@@ -276,29 +162,25 @@
 
         function renderUI() {
             document.getElementById('nav-brand-title').textContent = appState.siteConfig.title;
-            document.getElementById('plan-price-display').textContent = appState.siteConfig.price;
             document.getElementById('hero-subtext').textContent = appState.siteConfig.heroSubtext;
             
             const profilesGrid = document.getElementById('profiles-grid');
             profilesGrid.innerHTML = '';
             appState.profiles.forEach(prof => {
-                const isUnlocked = appState.currentUser && appState.currentUser.isActive;
                 profilesGrid.innerHTML += `
                     <div class="glass-card rounded-2xl overflow-hidden border border-gold-500/20 p-4 text-right space-y-2">
                         <img src="${prof.img}" class="w-full h-48 object-cover rounded-xl">
                         <h3 class="text-lg font-bold text-white">${prof.name} (${prof.age}) - ${prof.city}</h3>
                         <p class="text-xs text-gray-300">${prof.job}</p>
-                        ${isUnlocked ? `<span class="text-green-400 font-bold block">واتساب: ${prof.phone}</span>` : `<button onclick="handleMainCTA()" class="w-full py-2 bg-gold-500 text-black font-bold text-xs rounded-xl">إظهار الرقم</button>`}
                     </div>
                 `;
             });
-
             document.getElementById('adm-site-title').value = appState.siteConfig.title;
             document.getElementById('adm-plan-price').value = appState.siteConfig.price;
         }
 
         function saveAdminGeneralSettings() {
-            appState.siteConfig.title = document.getElementById('adm-site-title-value') || document.getElementById('adm-site-title').value;
+            appState.siteConfig.title = document.getElementById('adm-site-title').value;
             appState.siteConfig.price = document.getElementById('adm-plan-price').value;
             saveState();
             closeModal('admin-modal');
@@ -306,47 +188,11 @@
 
         function promptAdminLogin() {
             const pass = prompt("كلمة المرور:");
-            if (pass === (appState.adminPassword || "admin123")) {
-                openModal('admin-modal');
-            } else if (pass !== null) {
-                alert("خطأ في كلمة المرور");
-            }
-        }
-
-        function handleMainCTA() {
-            if (!appState.currentUser) openAuthModal('signup');
-            else if (!appState.currentUser.isActive) openModal('checkout-modal');
+            if (pass === (appState.adminPassword || "admin123")) openModal('admin-modal');
         }
 
         function openModal(id) { document.getElementById(id).classList.remove('hidden'); }
         function closeModal(id) { document.getElementById(id).classList.add('hidden'); }
-        function openAuthModal(t) { openModal('auth-modal'); }
-        function switchAuthTab(t) {}
-
-        function handleSignup(e) {
-            e.preventDefault();
-            appState.currentUser = { name: document.getElementById('signup-name').value, phone: document.getElementById('signup-phone').value, isActive: false };
-            saveState();
-            closeModal('auth-modal');
-            openModal('checkout-modal');
-        }
-
-        function handleProofFileSelect(e) {
-            const file = e.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = (evt) => { currentUploadedProofBase64 = evt.target.result; };
-                reader.readAsDataURL(file);
-            }
-        }
-
-        function handleProofSubmit(e) {
-            e.preventDefault();
-            appState.paymentRequests.push({ fullName: document.getElementById('proof-fullname').value, proofImg: currentUploadedProofBase64, status: 'pending' });
-            saveState();
-            closeModal('checkout-modal');
-            showToast("تم إرسال الإيصال بنجاح", "success");
-        }
 
         function showToast(msg) {
             const toast = document.getElementById('toast');
